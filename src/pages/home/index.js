@@ -94,6 +94,7 @@ function Home() {
       const response = await api.get('/contact')
 
       if (response.data) {
+        setPageLoading(false)
         handleContactResponse(response.data)
       }
     }
@@ -102,7 +103,6 @@ function Home() {
       toast.error('Houve um erro ao carregar as informações')
     }
 
-    setPageLoading(false)
   }
 
 
