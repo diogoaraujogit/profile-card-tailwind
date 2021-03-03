@@ -106,7 +106,7 @@ function Home() {
   }
 
 
-  // PAGE STATES
+  // PAGE SIDE EFFECTS
   useEffect(() => {
     getContact()
     // eslint-disable-next-line
